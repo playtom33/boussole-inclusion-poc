@@ -186,7 +186,7 @@ export async function POST(request) {
 
     // Call Claude API
     const response = await getClient().messages.create({
-      model: 'claude-sonnet-4-20250514',
+      model: 'claude-sonnet-4-5-20250929',
       max_tokens: 1024,
       system: systemPrompt,
       messages: conversationMessages,
